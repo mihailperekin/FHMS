@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Обход пожарных гидрантов</title>
+</head>
+<body>
+    <div class="container">
+        <form method="post">
+            <h1>Обход пожарных гидрантов</h1>
+            <label for="address">Адрес:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="vkNumber">Номер ВК:</label>
+            <input type="text" id="vkNumber" name="vkNumber">
+
+            <label for="pressure">Давление гидранта:</label>
+            <input type="text" id="pressure" name="pressure">
+
+            <label for="defects">Дефекты:</label>
+            <textarea id="defects" name="defects"></textarea>
+
+            <label for="part">Часть:</label>
+            <select id="part" name="part" required>
+                <option value="">Выберите...</option>
+                <option value="ПЧ-1">ПЧ-1</option>
+                <option value="ПЧ-4">ПЧ-4</option>
+                <option value="СЧ">СЧ</option>
+            </select>
+
+            <label for="responsible">Ответственный:</label>
+            <select id="responsible" name="responsible" required>
+                <option value="">Выберите...</option>
+                <option value="Горбачёв">Горбачёв</option>
+                <option value="Адасенко">Адасенко</option>
+                <option value="Ильин">Ильин</option>
+            </select>
+            <button type="submit">Отправить</button>
+        </form>
+    </div>
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #333; color: #fff;">
+        <p>© 2024 Все права защищены. | <a href="/download_file" style="color: #fff;">Скачать таблицу</a></p>
+        <a href="/map" style="color: #fff;">Посмотреть карту</a>
+    </footer>
+</body>
+</html>
